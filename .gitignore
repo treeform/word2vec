@@ -1,0 +1,13 @@
+# ignore files with no extention:
+*
+!*/
+!*.*
+
+# normal ignores:
+*.exe
+nimcache
+
+# big fils
+*.txt
+*.float32
+*.zip
