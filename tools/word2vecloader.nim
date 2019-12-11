@@ -4,7 +4,8 @@ proc genBin(power: int) =
   var words: string
   var vectors: seq[float32]
   var i = 0
-  var fileName = &"glove.6B/glove.6B.{$power}d.txt"
+  var fileName = &"glovebin/glove.6B.{$power}d.txt"
+  echo "generating ", fileName
   for line in fileName.lines():
     let line = line.split(" ")
     let word = line[0]
@@ -26,8 +27,7 @@ proc genBin(power: int) =
   bin.writeData(unsafeAddr vectors[0], vectors.len * 4)
   bin.close()
 
-
 genBin(50)
-# genBin(100)
-# genBin(200)
-# genBin(300)
+genBin(100)
+genBin(200)
+genBin(300)
