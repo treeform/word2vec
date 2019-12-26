@@ -1,9 +1,11 @@
-# word2vec
+# word2vec - for Nim
 
-Word2vec can be used to turn text into vectors that encode the meanting.
+![Word2vec Logo](docs/word2vecLogo.png)
+
+[Word2vec](https://en.wikipedia.org/wiki/Word2vec) can be used to turn text into vectors that encode the meanting.
 You can use these vectors to compare simmilarties between texts.
 
-Exmaple:
+## Exmaple
 
 ```nim
 import word2vec
@@ -16,11 +18,27 @@ let
 echo dist(aVec, bVec)
 ```
 
+<!--
+TODO:
 
-Beforey you start you need to:
+From famous [king - man + woman is queen; but why?](https://p.migdal.pl/2017/01/06/king-man-woman-queen-why.html)
+
+```nim
+import word2vec
+
+load(300) # load huge binary file
+let vec = word2vec("king") - word2vec("man") + word2vec("woman")
+echo vec2world(vec)
+``` -->
+
+## Getting started
+
+This library uses alreayd created [GloVe](https://nlp.stanford.edu/projects/glove/) vectors. There is no need to train your own vectors.
+
+Beforey you start you need to download and convert:
 * Download the GloVe vectors: https://nlp.stanford.edu/projects/glove/
 * Unzip the `glove.6B.zip`
-* Run word2vecloader.nim
+* Run word2vecloader.nim to convert text files into faster to load binary files.
 
 ```sh
 mkdir glovebin
