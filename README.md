@@ -2,8 +2,9 @@
 
 ![Word2vec Logo](docs/word2vecLogo.png)
 
-[Word2vec](https://en.wikipedia.org/wiki/Word2vec) can be used to turn text into vectors that encode the meanting.
-You can use these vectors to compare simmilarties between texts.
+[Word2vec](https://en.wikipedia.org/wiki/Word2vec) can be used to turn text into vectors that encode the meaning.
+You can use these vectors to compare similarities between texts.
+
 
 ## Exmaple
 
