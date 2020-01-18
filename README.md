@@ -45,7 +45,7 @@ Beforey you start you need to download and convert:
 mkdir glovebin
 cd glovebin
 wget http://nlp.stanford.edu/data/glove.6B.zip
-unzip love.6B.zip
+unzip glove.6B.zip
 cd ..
 nim c -r tools/word2vecloader.nim
 ```
