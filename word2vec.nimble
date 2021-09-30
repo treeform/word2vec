@@ -1,7 +1,7 @@
 # Package
 
 version       = "0.0.1"
-author        = "treeform"
+author        = "Andre von Houck"
 description   = "Word2vec implemented in nim."
 license       = "MIT"
 srcDir        = "src"

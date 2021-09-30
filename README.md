@@ -2,6 +2,16 @@
 
 ![Word2vec Logo](docs/word2vecLogo.png)
 
+`nimble install word2vec`
+
+![Github Actions](https://github.com/treeform/word2vec/workflows/Github%20Actions/badge.svg)
+
+[API reference](https://nimdocs.com/treeform/word2vec)
+
+This library has no dependencies other than the Nim standard libarary.
+
+## About
+
 [Word2vec](https://en.wikipedia.org/wiki/Word2vec) can be used to turn text into vectors that encode the meaning.
 You can use these vectors to compare similarities between texts.
 
@@ -49,4 +59,3 @@ unzip glove.6B.zip
 cd ..
 nim c -r tools/word2vecloader.nim
 ```
-
